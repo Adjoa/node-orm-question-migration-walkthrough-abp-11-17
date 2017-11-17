@@ -9,7 +9,7 @@ class Question {
         CREATE TABLE questions (
           id INTEGER PRIMARY KEY,
         )`
-        
+
       db.run(sql, function(){
         resolve("Created questions table!")
       })
