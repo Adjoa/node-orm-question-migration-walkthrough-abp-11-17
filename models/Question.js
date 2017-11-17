@@ -10,7 +10,14 @@ class Question {
         content TEXT,
       )`
 
-    console.log('Preparing to create questions table...')
+    console.log("Preparing to create questions table...")
+
+    return new Promise(function(resolve){
+      db.run(sql, function(){
+        console.log("...questions table created!")
+        resolve("Success!")
+      })
+    })
   }
 }
 
