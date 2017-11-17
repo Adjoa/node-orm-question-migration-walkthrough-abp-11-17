@@ -12,7 +12,6 @@ class Question {
         )
         `
       db.run(sql, function(){
-        //console.log("...questions table created!")
         resolve("Created questions table!")
       })
     })
